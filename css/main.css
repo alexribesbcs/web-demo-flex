@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Lust", serif;
+    src: url(../fonts/lust-regular.woff2);
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url(../fonts/opensans-regular.woff2);
+}
+
+body {
+    background-color: #FBEECA;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.grid--textos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.titulo {
+    font-family: "Lust", serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.texto {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.enlace {
+    text-decoration: none;
+    background-color: #007C89;
+    color: white;
+    padding: 1.2rem 1.75rem;
+    font-size: .8rem;
+}
+
+.enlace--simple {
+    background-color: transparent;
+    color: #007C89;
+    font-weight: bold;
+}
+
+.grid--imagen {
+    display: inherit;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid--imagen img {
+    width: 100%;
+}
+
+.container--mailchimp {
+    background-color: #C5DBF2;
+    padding: 1rem;
+}
+
+.texto--mailchimp {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: .75rem;
+}
+
+@media all and (width < 760px) {
+    .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .grid--imagen img {
+        max-width: max(70vw, 300px);
+    }
+}
